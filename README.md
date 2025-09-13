@@ -32,7 +32,7 @@ Thử thách nằm ở việc đưa bóng chạm đúng số lần bật tườn
 ---
 
 ## 📈 Levels
-- Có **3 level** với độ khó tăng dần.  
+- Có **4 level** với độ khó tăng dần.  
 - Số lần nảy mục tiêu dao động **1 → 5**.  
 
 ---
