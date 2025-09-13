@@ -140,6 +140,11 @@ Escape Ball Game là một trò chơi puzzle vật lý nơi người chơi phả
 
 **Screen Resolutions:**  
 - 1920x1080 
+## 📂 Test Cases
+
+Xem toàn bộ danh sách **Test Cases** tại Google Sheets theo link sau:
+
+[Test Cases – Google Sheets](https://docs.google.com/spreadsheets/d/1n4dtkeyrAfuXmmktD5SLCraeopH18Z3TM8GFSEQZ0HY/edit?usp=sharing)
 
 ---
 
