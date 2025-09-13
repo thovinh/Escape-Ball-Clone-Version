@@ -10,7 +10,7 @@
 
 ## 🌐 Play Online
 Bạn có thể trải nghiệm trò chơi ngay trên web tại:  
-👉 [Escape Ball Game Online](https://thovinh.github.io/thovinh-Escape-Ball-Game/)
+👉 [Escape Ball Game Online](https://thovinh.github.io/Escape-Ball-Clone-Version/)
 
 ---
 
