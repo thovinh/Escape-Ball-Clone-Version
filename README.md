@@ -11,6 +11,7 @@
 ## 🌐 Play Online
 Bạn có thể trải nghiệm trò chơi ngay trên web tại:  
 👉 [Escape Ball Game Online](https://thovinh.github.io/thovinh-Escape-Ball-Game/)
+👉 [Test Cases – Google Sheets](https://docs.google.com/spreadsheets/d/1n4dtkeyrAfuXmmktD5SLCraeopH18Z3TM8GFSEQZ0HY/edit?usp=sharing)
 
 ---
 
