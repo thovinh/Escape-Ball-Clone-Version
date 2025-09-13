@@ -1,4 +1,7 @@
 # 🎮 Escape Ball
+## 🌐 Play Online
+Bạn có thể trải nghiệm trò chơi ngay trên web tại địa chỉ sau:  
+[Escape Ball Game Online](https://thovinh.github.io/thovinh-Escape-Ball-Game/)
 
 ## 📌 Project Information
 - **Game Name:** Escape Ball  
@@ -76,3 +79,4 @@ Thử thách nằm ở việc đưa bóng chạm đúng số lần bật tườn
 1. Clone project:  
    ```bash
    git clone https://github.com/thovinh/thovinh-Escape-Ball-Game.git
+2. 
