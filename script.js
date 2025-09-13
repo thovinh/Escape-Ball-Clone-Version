@@ -18,53 +18,53 @@ const canvas = document.getElementById('gameCanvas');
         const levels = [
             {
                 walls: [
-                    { x1: 50, y1: 50, x2: 750, y2: 50 },   // top
-                    { x1: 50, y1: 50, x2: 50, y2: 550 },   // left
-                    { x1: 750, y1: 50, x2: 750, y2: 550 }, // right
-                    { x1: 50, y1: 550, x2: 200, y2: 550 }, // bottom left
-                    { x1: 500, y1: 550, x2: 750, y2: 550 }, // bottom right
+                    { x1: 30, y1: 30, x2: 470, y2: 30 },   // top
+                    { x1: 30, y1: 30, x2: 30, y2: 345 },   // left
+                    { x1: 470, y1: 30, x2: 470, y2: 345 }, // right
+                    { x1: 30, y1: 345, x2: 130, y2: 345 }, // bottom left
+                    { x1: 320, y1: 345, x2: 470, y2: 345 }, // bottom right
                 ],
                 obstacles: [],
-                target: { x: 250, y: 500, width: 200, height: 40 },
-                start: { x: 100, y: 480 },
+                target: { x: 150, y: 320, width: 120, height: 25 },
+                start: { x: 60, y: 300 },
                 targetBounces: 1
             },
             {
                 walls: [
-                    { x1: 50, y1: 50, x2: 750, y2: 50 },
-                    { x1: 50, y1: 50, x2: 50, y2: 550 },
-                    { x1: 750, y1: 50, x2: 750, y2: 550 },
-                    { x1: 50, y1: 550, x2: 750, y2: 550 }
+                    { x1: 30, y1: 30, x2: 470, y2: 30 },
+                    { x1: 30, y1: 30, x2: 30, y2: 345 },
+                    { x1: 470, y1: 30, x2: 470, y2: 345 },
+                    { x1: 30, y1: 345, x2: 470, y2: 345 }
                 ],
                 obstacles: [],
-                target: { x: 600, y: 80, width: 130, height: 60 },
-                start: { x: 100, y: 480 },
+                target: { x: 360, y: 50, width: 80, height: 40 },
+                start: { x: 60, y: 300 },
                 targetBounces: 2
             },
             {
                 walls: [
-                    { x1: 50, y1: 50, x2: 750, y2: 50 },
-                    { x1: 50, y1: 50, x2: 50, y2: 550 },
-                    { x1: 750, y1: 50, x2: 750, y2: 550 },
-                    { x1: 50, y1: 550, x2: 750, y2: 550 }
+                    { x1: 30, y1: 30, x2: 470, y2: 30 },
+                    { x1: 30, y1: 30, x2: 30, y2: 345 },
+                    { x1: 470, y1: 30, x2: 470, y2: 345 },
+                    { x1: 30, y1: 345, x2: 470, y2: 345 }
                 ],
                 obstacles: [],
-                target: { x: 600, y: 460, width: 130, height: 60 },
-                start: { x: 100, y: 100 },
+                target: { x: 360, y: 280, width: 80, height: 40 },
+                start: { x: 60, y: 60 },
                 targetBounces: 2
             },
             {
                 walls: [
-                    { x1: 50, y1: 50, x2: 750, y2: 50 },
-                    { x1: 50, y1: 50, x2: 50, y2: 550 },
-                    { x1: 750, y1: 50, x2: 750, y2: 550 },
-                    { x1: 50, y1: 550, x2: 750, y2: 550 }
+                    { x1: 30, y1: 30, x2: 470, y2: 30 },
+                    { x1: 30, y1: 30, x2: 30, y2: 345 },
+                    { x1: 470, y1: 30, x2: 470, y2: 345 },
+                    { x1: 30, y1: 345, x2: 470, y2: 345 }
                 ],
                 obstacles: [
-                    { x: 500, y: 350, width: 100, height: 20 }
+                    { x: 320, y: 220, width: 60, height: 15 }
                 ],
-                target: { x: 350, y: 450, width: 100, height: 60 },
-                start: { x: 100, y: 100 },
+                target: { x: 200, y: 280, width: 60, height: 40 },
+                start: { x: 60, y: 60 },
                 targetBounces: 4
             }
         ];

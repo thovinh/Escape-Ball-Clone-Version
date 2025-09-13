@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -13,9 +13,10 @@ body {
 .game-container {
     background: #1a1a1a;
     border-radius: 20px;
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-    width: 850px;
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
     overflow: visible;
 }
@@ -24,37 +25,40 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    padding: 0 10px;
+    margin-bottom: 15px;
+    padding: 0 5px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .level {
     background: linear-gradient(45deg, #ff6b6b, #ee5a24);
-    padding: 8px 16px;
-    border-radius: 20px;
+    padding: 6px 12px;
+    border-radius: 15px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .target-info {
     display: flex;
-    gap: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .target-bounces {
     background: linear-gradient(45deg, #feca57, #ff9ff3);
-    padding: 8px 16px;
-    border-radius: 20px;
+    padding: 6px 12px;
+    border-radius: 15px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .current-bounces {
     background: linear-gradient(45deg, #00d2d3, #54a0ff);
-    padding: 8px 16px;
-    border-radius: 20px;
+    padding: 6px 12px;
+    border-radius: 15px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 #gameCanvas {
@@ -64,8 +68,10 @@ body {
     cursor: crosshair;
     display: block;
     margin: 0 auto;
-    width: 800px;
-    height: 600px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 4/3;
     position: relative;
     z-index: 1;
 }
@@ -73,18 +79,23 @@ body {
 .controls {
     margin-top: 15px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .btn {
     background: linear-gradient(45deg, #667eea, #764ba2);
     border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    border-radius: 25px;
+    padding: 8px 16px;
+    border-radius: 20px;
     color: white;
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.2s;
+    font-size: 14px;
+    min-width: 100px;
 }
 
 .btn:hover {
@@ -108,3 +119,65 @@ body {
 .success { color: #2ed573; }
 .fail { color: #ff4757; }
 .playing { color: #74b9ff; }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 5px;
+    }
+    
+    .game-container {
+        padding: 10px;
+        max-width: 100%;
+    }
+    
+    .game-header {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    
+    .target-info {
+        justify-content: center;
+    }
+    
+    .level, .target-bounces, .current-bounces {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+    
+    .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+        min-width: 80px;
+    }
+    
+    .instructions {
+        font-size: 12px;
+    }
+    
+    .status {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-container {
+        padding: 8px;
+    }
+    
+    .level, .target-bounces, .current-bounces {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+    
+    .btn {
+        padding: 5px 10px;
+        font-size: 11px;
+        min-width: 70px;
+    }
+    
+    .instructions {
+        font-size: 11px;
+    }
+}
