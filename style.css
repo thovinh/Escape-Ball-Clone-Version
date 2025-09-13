@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.game-container {
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    width: 850px;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.level {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.target-info {
+    display: flex;
+    gap: 15px;
+}
+
+.target-bounces {
+    background: linear-gradient(45deg, #feca57, #ff9ff3);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.current-bounces {
+    background: linear-gradient(45deg, #00d2d3, #54a0ff);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#gameCanvas {
+    border: 3px solid #333;
+    border-radius: 10px;
+    background: #000;
+    cursor: crosshair;
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+.controls {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.btn {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.instructions {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.status {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.success { color: #2ed573; }
+.fail { color: #ff4757; }
+.playing { color: #74b9ff; }

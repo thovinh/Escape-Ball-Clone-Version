@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Ball Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="level">Level <span id="levelNumber">1</span></div>
+            <div class="target-info">
+                <div class="target-bounces">Target: <span id="targetBounces">5</span></div>
+                <div class="current-bounces">Current: <span id="bounceCount">0</span></div>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div class="status" id="gameStatus">Kéo chuột để bắn bóng. Đạt đúng số bounces mục tiêu!</div>
+        
+        <div class="controls">
+            <button class="btn" onclick="previousLevel()">Previous Level</button>
+            <button class="btn" onclick="resetLevel()">Reset Level</button>
+            <button class="btn" onclick="nextLevel()">Next Level</button>
+        </div>
+        
+        <div class="instructions">
+            Mục tiêu: Đưa bóng vào vùng xanh với ĐÚNG số bounces yêu cầu!
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
