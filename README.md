@@ -11,7 +11,6 @@
 ## 🌐 Play Online
 Bạn có thể trải nghiệm trò chơi ngay trên web tại:  
 👉 [Escape Ball Game Online](https://thovinh.github.io/thovinh-Escape-Ball-Game/)
-👉 [Test Cases – Google Sheets](https://docs.google.com/spreadsheets/d/1n4dtkeyrAfuXmmktD5SLCraeopH18Z3TM8GFSEQZ0HY/edit?usp=sharing)
 
 ---
 
@@ -28,6 +27,7 @@ Thử thách nằm ở việc đưa bóng chạm đúng số lần bật tườn
 
 ## 📑 Documentation
 - [Test Plan](docs/TEST_PLAN.md)
+- [Test Cases – Google Sheets](https://docs.google.com/spreadsheets/d/1n4dtkeyrAfuXmmktD5SLCraeopH18Z3TM8GFSEQZ0HY/edit?usp=sharing)
 
 ---
 
