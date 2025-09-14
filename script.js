@@ -105,11 +105,15 @@ const canvas = document.getElementById('gameCanvas');
                 prevLevelBtn.style.opacity = '1';
             }
             
-            // Disable next level button if at maximum level
+            // Disable next level button if not won or at maximum level
             const nextLevelBtn = document.querySelector('button[onclick="nextLevel()"]');
             if (gameState.level >= levels.length) {
                 nextLevelBtn.disabled = true;
                 nextLevelBtn.textContent = 'Hoàn thành!';
+                nextLevelBtn.style.opacity = '0.5';
+            } else if (!gameState.gameWon) {
+                nextLevelBtn.disabled = true;
+                nextLevelBtn.textContent = 'Chưa thắng!';
                 nextLevelBtn.style.opacity = '0.5';
             } else {
                 nextLevelBtn.disabled = false;
@@ -149,13 +153,16 @@ const canvas = document.getElementById('gameCanvas');
         }
         
         function nextLevel() {
-            // Only allow next level if not at maximum level
-            if (gameState.level < levels.length) {
+            // Only allow next level if current level is won and not at maximum level
+            if (gameState.gameWon && gameState.level < levels.length) {
                 gameState.level++;
                 resetLevel();
-            } else {
-                // Show completion message or disable next level button
+            } else if (gameState.level >= levels.length) {
+                // Show completion message
                 alert('Chúc mừng! Bạn đã hoàn thành tất cả các level!');
+            } else {
+                // Show message that level must be completed first
+                alert('Bạn phải hoàn thành level hiện tại trước khi chuyển level!');
             }
         }
         
