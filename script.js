@@ -292,6 +292,7 @@ const canvas = document.getElementById('gameCanvas');
                 if (gameState.bounces > level.targetBounces) {
                     gameState.gameFailed = true;
                     updateStatus();
+                    updateUI();
                 }
             }
         }
@@ -312,6 +313,7 @@ const canvas = document.getElementById('gameCanvas');
                     // Obstacles are deadly - instant fail
                     gameState.gameFailed = true;
                     updateStatus();
+                    updateUI();
                 }
             });
         }
@@ -335,6 +337,7 @@ const canvas = document.getElementById('gameCanvas');
                         gameState.gameFailed = true;
                     }
                     updateStatus();
+                    updateUI();
                 }
             }
         }
@@ -365,6 +368,7 @@ const canvas = document.getElementById('gameCanvas');
                     if (!inTarget || gameState.bounces !== level.targetBounces) {
                         gameState.gameFailed = true;
                         updateStatus();
+                        updateUI();
                     }
                 }
                 return;
